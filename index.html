@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoper</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        button {
+            width: 130px;
+            font-size: 30px;
+            padding: 10px 20px;
+            margin: 50px;
+        }
+
+        .stoper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h2.time {
+            font-family: monospace;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="start">Start</button>
+    <button class="reset">Reset</button>
+    <div class="stoper">
+        <h2>Czas od startu</h2>
+        <h2 class="time"><span class="seconds">--</span> : <span class="miliseconds">--</span></h2>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
